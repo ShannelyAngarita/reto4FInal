@@ -10,10 +10,10 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:3.0.0:exec</goal>
             </goals>
             <properties>
-                <exec.vmArgs>-Dspring.profiles.active=devh2</exec.vmArgs>
+                <exec.vmArgs>-Dspring.profiles.active=dev</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
                 <exec.appArgs></exec.appArgs>
-                <exec.mainClass>co.edu.usa.reto3.Reto3Application</exec.mainClass>
+                <exec.mainClass>co.edu.usa.Reto3.Reto3Application</exec.mainClass>
                 <exec.executable>java</exec.executable>
             </properties>
         </action>
@@ -27,10 +27,10 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:3.0.0:exec</goal>
             </goals>
             <properties>
-                <exec.vmArgs>-Dspring.profiles.active=devh2 -agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
+                <exec.vmArgs>-Dspring.profiles.active=dev -agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
                 <exec.appArgs></exec.appArgs>
-                <exec.mainClass>co.edu.usa.reto3.Reto3Application</exec.mainClass>
+                <exec.mainClass>co.edu.usa.Reto3.Reto3Application</exec.mainClass>
                 <exec.executable>java</exec.executable>
                 <jpda.listen>true</jpda.listen>
             </properties>
@@ -45,9 +45,9 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:3.0.0:exec</goal>
             </goals>
             <properties>
-                <exec.vmArgs>-Dspring.profiles.active=devh2</exec.vmArgs>
+                <exec.vmArgs>-Dspring.profiles.active=dev</exec.vmArgs>
                 <exec.args>${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}</exec.args>
-                <exec.mainClass>co.edu.usa.reto3.Reto3Application</exec.mainClass>
+                <exec.mainClass>co.edu.usa.Reto3.Reto3Application</exec.mainClass>
                 <exec.executable>java</exec.executable>
                 <exec.appArgs></exec.appArgs>
             </properties>
